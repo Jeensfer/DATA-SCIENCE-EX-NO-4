@@ -71,6 +71,12 @@ df = df.apply(
 print("Original Dataset")
 print(df.head())
 
+```
+<img width="461" height="274" alt="image" src="https://github.com/user-attachments/assets/45096283-ac85-4ed2-bc0e-3ded0b124cd2" />
+
+
+```
+
 # Encode categorical columns
 encoder = LabelEncoder()
 
@@ -125,6 +131,13 @@ selected_filter = X.columns[
 print("\nFilter Selected Features")
 print(selected_filter)
 
+```
+<img width="537" height="46" alt="image" src="https://github.com/user-attachments/assets/171bddcc-f695-41bb-9292-195557551064" />
+
+
+```
+
+
 # Wrapper Method (RFE)
 
 model = LogisticRegression(
@@ -145,6 +158,14 @@ selected_wrapper = X.columns[
 print("\nWrapper Selected Features")
 print(selected_wrapper)
 
+```
+
+<img width="570" height="45" alt="image" src="https://github.com/user-attachments/assets/50792593-39cb-48ad-a25c-b65862c3114a" />
+
+
+```
+
+
 # Embedded Method
 
 embed = SelectFromModel(
@@ -163,6 +184,14 @@ selected_embed = X.columns[
 print("\nEmbedded Selected Features")
 print(selected_embed)
 
+```
+
+<img width="417" height="73" alt="image" src="https://github.com/user-attachments/assets/98f42ac6-50f8-4f2b-919e-0ad521a2be0b" />
+
+
+```
+
+
 # Save Output
 
 output = X_scaled.copy()
@@ -175,7 +204,9 @@ output.to_csv(
 
 print("\nData saved as Scaled_Selected_Output.csv")
 ```
-<img width="744" height="601" alt="image" src="https://github.com/user-attachments/assets/70eb0e40-2060-4d73-9cc7-514cc3671af3" />
+
+<img width="246" height="21" alt="image" src="https://github.com/user-attachments/assets/25945e53-41e6-4a76-bdfd-2845c3e4f7ee" />
+
 
 # RESULT:
 The program was executed and verified successfully.
